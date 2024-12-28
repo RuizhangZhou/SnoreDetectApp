@@ -1,4 +1,31 @@
 {
-  "name": "client",
-  "slug": "client"
+  "expo": {
+    "name": "SnoreDetector",
+    "slug": "snore-detector",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow SnoreDetector to access your microphone."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Need microphone access to detect snoring"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": ["RECORD_AUDIO"]
+    }
+  }
 }

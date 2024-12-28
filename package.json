@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "@types/react": "^19.0.2"
+    "@types/react": "^19.0.2",
+    "expo-module-scripts": "^4.0.2"
   }
 }
